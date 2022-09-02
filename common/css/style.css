@@ -45,7 +45,7 @@
 
 .aside__innner{width:790px}
 .aside__body{}
-.menu__item:not(:first-child){margin-top:40px}
+.aside__body .menu__item:not(:first-child){margin-top:40px}
 .menu__link{display:inline-flex;align-items:flex-start;}
 .menu__link .num{width:50px;font-size:24px;font-weight: 600; vertical-align: top;color: #fff;}
 .menu__link .txt{font-size:100px}
@@ -76,7 +76,8 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 .section--object{position:absolute;top:50%;right:10%;z-index:0;width:360px;height:360px;background-color:var(--com);transform: rotate(-45deg);}
 
 .sect__flex{display:flex;justify-content: space-between;}
-.sect__flex .menu__list{display:flex}
+.sect__flex .menu__list{display:flex;margin-top:100px}
+.sect__flex .menu__list li{}
 .contact--info{}
 .contact--info a{display:block;}
 
