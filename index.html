@@ -19,31 +19,53 @@
     <meta property="og:image" content="" />
     <link rel="stylesheet" href="/common/css/style.css" />
     <script src="/common/js/jquery-3.2.1.min.js"></script>
-    <!-- <script src="/common/js/main.js"></script> -->
+    <script src="/common/js/main.js"></script>
   </head>
   <body>
     <div id="wrap">
       <!-- header -->
       <header>
         <div class="header__Inner">
-          <a href="#" class="logo">
+          <!-- <a href="#" class="logo">
             <h1 class="blind">로고</h1>
-          </a>
+          </a> -->
           <button type="button" class="btn-menu"><span>메뉴오픈</span></button>
         </div>
-        <nav>
+        <nav class="nav">
           <div class="aside__top">
-            <a href="#" class="logo">
+            <!-- <a href="#" class="logo">
               <h1 class="blind">로고</h1>
-            </a>
+            </a> -->
             <button type="button" class="btn-clse">
               <span>메뉴닫기</span>
             </button>
           </div>
           <div class="aside__body">
             <div class="aside__innner">
-              <ul class="aside__menu"></ul>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#intro" class="menu__link">
+                    <span class="num">01</span>
+                    <span class="txt fill__txt"><span data-hover="intro">intro</span></span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#project" class="menu__link">
+                    <span class="num">02</span>
+                    <span class="txt fill__txt"><span data-hover="project">project</span></span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contact" class="menu__link">
+                    <span class="num">03</span>
+                    <span class="txt fill__txt"><span data-hover="contact">contact</span></span>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="aside--object">
+            <img src="" alt="">
           </div>
         </nav>
       </header>
@@ -51,9 +73,63 @@
 
       <div class="container">
         <main id="main">
-          <div class="section">1</div>
-          <div class="section">2</div>
-          <div class="section">3</div>
+          <div class="section" id="intro">
+            <div class="section__inner">
+              <div class="title--wrap">
+                <h3 class="title">
+                  <p class="t1"><span>Welcome to my site <br>Hello. My name is sujin :) </span></p>
+                  <p class="t2 outline__txt"><span data-hover="Ready to meet you&#128156;">Ready to meet you&#128156;</span></p>
+                </h3>
+                <p class="text">안녕하세요. 웹퍼블리셔 백수진입니다. <br>
+								웹사이트 개발과 운영, 파견등과 같이 다양한 경험을 바탕으로 리뉴얼, 구축, 채용, 인사 시스템등 많은 프로젝트들에 참가 하였습니다. 좋은 프로젝트를 경험할수 있었고 많은 개발, 기획, 디자인팀과 함께 협업하여 일하는 방법과 형상관리툴(SVN, Git), 다양한 솔루션 경험을 통해 다양한 지식 배울수 있었습니다.</p>
+              </div>
+              <div class="section--object">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="section" id="project">2</div>
+          <div class="section section3" id="contact">
+            <div class="section__inner">
+              <div class="title--wrap">
+                <h3 class="title">
+                  <p class="t1"><span>1111111111111111111111111111111111111111</span></p>
+                  <p class="t2 outline__txt"><span data-hover="2222222222222222222222">2222222222222222222222</span></p>
+                </h3>
+                <p class="text">안녕하세요. 안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.</p>
+              </div>
+              <div class="section--object">
+                <img src="" alt="">
+              </div>
+              <div class="sect__flex">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="#intro" class="menu__link">
+                        <span class="num">01</span>
+                        <span class="txt fill__txt"><span data-hover="intro">intro</span></span>
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#project" class="menu__link">
+                        <span class="num">02</span>
+                        <span class="txt fill__txt"><span data-hover="project">project</span></span>
+                      </a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#contact" class="menu__link">
+                        <span class="num">03</span>
+                        <span class="txt fill__txt"><span data-hover="contact">contact</span></span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="contact--info">
+                    <a href="tel:010-9996-4696" class="tel">Phone</a>
+                    <a href="https://whitesujin.github.io/portfolio2022/" class="link">Git hub</a>
+                    <a href="mailto:whitesj121@gmail.com" class="mail">Mail</a>
+                  </div>
+                </div>
+              </div>
+          </div>
         </main>
       </div>
 
@@ -64,5 +140,15 @@
       <!-- <footer id="footer">
       </footer> -->
     </div>
+    <script>
+      $('.btn-menu').on('click', function(){
+        $(this).toggleClass('on');
+        $(this).parents().find('.nav').addClass('show');
+      });
+      $('.btn-clse, .menu__link').on('click', function(){
+        $(this).parents().find('.nav').removeClass('show');
+        $('.btn-menu').removeClass('on');
+      });
+    </script>
   </body>
 </html>
