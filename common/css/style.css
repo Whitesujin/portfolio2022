@@ -2,8 +2,11 @@
 @import "reset.css";
 /* @import "font.css"; */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
 
 :root{
     --base:#191919;
@@ -67,11 +70,19 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 color: var(--white); -webkit-text-fill-color: var(--white); -webkit-text-stroke-color: transparent;-webkit-text-stroke-width:0;
 transition: all .5s ease-in-out; content: attr(data-hover);}
 
+.section2 .title--wrap{display:inline-block}
+.section2 .title--wrap .text{font-size:24px}
+.section2 .title--wrap .title{font-size:200px}
+
 .sect__flex{display:flex;justify-content: space-between;}
 .sect__flex .menu__list{display:flex;margin-top:100px}
 .sect__flex .menu__list li{}
 .contact--info{}
 .contact--info a{display:block;}
+
+@media screen and (max-width: 1200px) {
+    .section__inner{width:100%;padding:0 2rem}
+}
 
 
 @keyframes moveUpThenDown {
@@ -128,3 +139,8 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
     }
 }
 
+@keyframes bg-scrolling-reverse {
+    to {
+        background-position: 120px 120px
+    }
+}
