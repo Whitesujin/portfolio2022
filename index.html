@@ -76,12 +76,12 @@
           <div class="section section1" id="intro">
             <div class="section__inner">
               <div class="title--wrap">
-                <h3 class="title">
-                  <p class="t1"><span>Welcome to my portfolio site.<br>Nice to meet you. My name is Sujin :) </span></p>
-                  <p class="t2 outline__txt"><span data-hover="Ready to meet you">Ready to work with you</span></p>
-                </h3>
-                <p class="text">안녕하세요. 웹퍼블리셔 백수진입니다. <br>
-								웹사이트 개발과 운영, 파견등과 같이 다양한 경험을 바탕으로 리뉴얼, 구축, 채용, 인사 시스템등 많은 프로젝트들에 참가 하였습니다. 좋은 프로젝트를 경험할수 있었고 많은 개발, 기획, 디자인팀과 함께 협업하여 일하는 방법과 디자인툴(Zeplin, Figma), 형상관리툴(SVN, Git), 다양한 솔루션 경험을 통해 다양한 지식 배울수 있었습니다.</p>
+                  <h3 class="title" id="typing">
+                  <!-- <p class="t1"  ><span>Welcome to my portfolio site.<br>Nice to meet you. My name is Sujin :) </span></p>
+                  <p class="t2 outline__txt"><span data-hover="Ready to work with you">Ready to work with you.</span></p>-->
+                  </h3>
+                  <p class="text">안녕하세요. 웹퍼블리셔 백수진입니다. <br>
+                  웹사이트 개발과 운영, 파견등과 같이 다양한 경험을 바탕으로 리뉴얼, 구축, 채용, 인사 시스템등 많은 프로젝트들에 참가 하였습니다. <br>개발, 기획, 디자인팀과 함께 협업하여 일해왔으며 디자인툴(Zeplin, Figma), 형상관리툴(SVN, Git), 다양한 솔루션 경험과 능력을 쌓아온 준비된 퍼블리셔입니다.</p> 
               </div>
               <div class="section--object">
                 <img src="" alt="">
@@ -103,10 +103,11 @@
             <div class="section__inner">
               <div class="title--wrap">
                 <h3 class="title">
-                  <p class="t1"><span>1111111111111111111111111111111111111111</span></p>
-                  <p class="t2 outline__txt"><span data-hover="2222222222222222222222">2222222222222222222222</span></p>
+                  <p class="t1"><span>Thank you for viewing my portfolio.</span></p>
+                  <p class="t2 outline__txt"><span data-hover="I look forward to your contact.">I look forward to your contact.</span></p>
                 </h3>
-                <p class="text">안녕하세요. 안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.안녕하세요.</p>
+                <!-- <p class="text">My portfolio ends here. Thank you for watching.<br>
+                  I am always a ready web publisher and would love to work with you.</p> -->
               </div>
               <div class="section--object">
                 <img src="" alt="">
@@ -146,6 +147,7 @@
       <link rel="stylesheet" href="common/css/fullpage.css">
       <script src="common/js/libs/fullpage.extensions.min.js"></script>
       <script src="common/js/libs/gsap.min.js"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       
       <!-- <footer id="footer">
       </footer> -->
@@ -159,6 +161,22 @@
         $(this).parents().find('.nav').removeClass('show');
         $('.btn-menu').removeClass('on');
       });
+
+      var typing = document.getElementById('typing');
+
+      var typewriter = new Typewriter(typing, {
+        //loop: true,
+        delay: 75,
+      });
+
+      typewriter
+        .typeString('<span class="t1"><span>Welcome to my portfolio site.</span></span><br>')
+        .typeString('<span class="t1"><span>Nice to meet you. My name is Sujin :) </span></span><br>')
+        //.pauseFor('2500')
+        .typeString('<span class="t2 outline__txt"><span data-hover="Ready to work with you">Ready to work with you.</span></span>')
+        
+        .start();
+
     </script>
   </body>
 </html>
