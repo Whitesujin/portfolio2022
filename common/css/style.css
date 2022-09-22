@@ -31,7 +31,6 @@
 .btn-clse span:before{transform: rotate(45deg);}
 .btn-clse span:after{transform: rotate(-45deg);}
 .aside__innner{width:790px}
-.aside__body{}
 .menu__list{position:relative;z-index:1;}
 .menu__item:not(:first-child){margin-top:40px}
 .menu__link{display:inline-flex;align-items:flex-start;}
@@ -46,9 +45,6 @@
 .section__inner{display:inline-block;text-align:left}
 br.mo{display:none}
 .title--wrap{position:relative;font-size:60px;font-weight:600;line-height:1.3;z-index:1}
-/* .title--wrap p{word-break: break-all;} */
-/* .title--wrap .title{font-size:60px;font-weight:600;line-height:1.3;} */
-/* .title--wrap .t2{display:block} */
 .title--wrap .outline__txt{font-size:inherit;/*line-height:1*/}
 .outline__txt:hover span:before{width:100%}
 .title--wrap .text{padding-top:40px;font-size:16px;font-weight:400;line-height:1.7;color:var(--white);word-break:keep-all;}
@@ -65,7 +61,7 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 color: var(--white); -webkit-text-fill-color: var(--white); -webkit-text-stroke-color: transparent;-webkit-text-stroke-width:0;
 transition: all .5s ease-in-out; content: attr(data-hover);}
 .section1 .title--wrap .text{transition-delay:3s}
-.section1 .outline__txt:hover span:before{margin-left:-2px}
+
 .section2 .title--wrap .text{font-size:24px}
 .section2 .title--wrap .title{font-size:200px}
 .btn-view{display:block;width:80px;height:18px;margin:0;margin-left:auto;background:url(../../images/arr.png);background-size:cover;font-size:0;transition: all .3s;}
@@ -165,9 +161,10 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
     .title--wrap{font-size:1.714rem;text-align:center;}
     .title--wrap .text{font-size:0.8rem}
     .contact--info{margin-top:2.143rem}
-    .title--wrap .outline__txt{padding-top:0.714rem}
-    .section1 .title--wrap .outline__txt{font-size:1.714rem}
+    .title--wrap .outline__txt{padding-top:0.714rem}    
     .section--object{width:12.857rem;height:12.857rem}
+    .section1 .title--wrap .outline__txt{font-size:1.714rem}
+    .section1 .outline__txt:hover span:before{margin-left:-2px}
     .section2 .title--wrap .text{text-align:left}
     .section3 .title--wrap .outline__txt{font-size:24px}
     .work--section .title--wrap .t1{font-size:1.714rem}
@@ -182,7 +179,7 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 }
 @media screen and (max-width: 375px) {
     .section1 .title--wrap .outline__txt{font-size:24px}
-    .section3 .title--wrap .outline__txt{font-size:24px}
+    .section3 .title--wrap .outline__txt{font-size:22px}
 }
 @media screen and (max-width: 320px) {
     .section1 .title--wrap .outline__txt{font-size:22px}
