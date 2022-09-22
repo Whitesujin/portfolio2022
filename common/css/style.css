@@ -126,6 +126,8 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
     .work--section .title--wrap .t1{font-size:2.857rem}
 }
 @media screen and (max-width: 768px) {
+    .btn-menu{top:30px}
+    .btn-clse{top:30px;bottom:auto}
     .aside__innner{width:100%;}
     .menu__link .num{width:1.429rem;font-size:0.857rem}
     .menu__link .txt{font-size:1.714rem}
