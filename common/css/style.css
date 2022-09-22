@@ -40,7 +40,7 @@
 .menu__link:hover .fill__txt span:before{width:0}
 .aside--object{position:absolute;top:50%;right:10%;width:360px;height:360px;background-color:var(--com);transform: rotate(-45deg);animation: move2 4s ease-in 0.5s infinite;}
 
-#main{background-color: #7494ff;}
+#main{background-color:var(--com)}
 .section{position:relative;height:100vh; background-color:var(--base);text-align:center;color:var(--white);transform:scale(1);transition: transform .3s ease}
 .section.scroll{transform: scale(.9)}
 .section__inner{display:inline-block;text-align:left}
