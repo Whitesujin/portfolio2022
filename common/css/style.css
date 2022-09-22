@@ -75,11 +75,11 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 .section2 .title--wrap .text{font-size:24px}
 .section2 .title--wrap .title{font-size:200px}
 
-.sect__flex{display:flex;flex-direction: column;justify-content: space-between;position:relative}
-.sect__flex .menu__list{display:flex;margin-top:100px}
-.sect__flex .menu__list li:not(:first-child){margin-left:30px}
-.contact--info{}
+.section3 .menu__list{display:flex;margin-top:50px}
+.section3 .menu__list li:not(:first-child){margin-left:30px}
+.contact--info{display:flex;justify-content:center;margin-top:100px}
 .contact--info a{display:block;}
+.contact--info a:not(:first-child){margin-left:30px}
 
 @media screen and (max-width: 1200px) {
     .section__inner{width:100%;padding:0 2rem}
