@@ -139,11 +139,11 @@ transition: all .5s ease-in-out; content: attr(data-hover);}
 .is-motion.is-active{transform: translate3d(0px, 0px, 0px);opacity:1}
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+    .section__inner{width:100%;padding:0 2rem}
     .work--section{width:100%;padding:0 2rem}
 }
 @media screen and (max-width: 1200px) {
-    .section__inner{width:100%;padding:0 2rem}
     .section2 .section__inner{display:flex;justify-content:center;}
     .section2 .title--wrap{display:inline-block}
     .section2 .title--wrap .title{font-size:14vw}
